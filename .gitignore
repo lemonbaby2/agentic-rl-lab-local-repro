@@ -1,0 +1,33 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venv-gpu/
+build/
+dist/
+
+# ---- 训练产物（体积大，不入库）----
+outputs/
+*.pt
+*.safetensors
+*.bin
+
+# ---- 本地数据缓存 ----
+data/
+datasets/
+cache/
+~/.cache/
+
+# ---- 日志与凭据 ----
+logs/*.log
+logs/*.out
+.env
+*.key
+
+# ---- IDE / 系统 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+logs/debug/

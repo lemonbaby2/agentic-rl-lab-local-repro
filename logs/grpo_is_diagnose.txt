@@ -1,0 +1,21 @@
+[data] loading GSM8K subset ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[data] train 400 | dev 20 | math_verify=False
+W1116 15:12:21.244000 49704 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   7%|▋         | 22/338 [00:00<00:02, 155.80it/s]Loading weights:  11%|█         | 38/338 [00:00<00:02, 109.78it/s]Loading weights:  16%|█▌        | 54/338 [00:00<00:02, 114.84it/s]Loading weights:  20%|█▉        | 67/338 [00:00<00:02, 115.91it/s]Loading weights:  23%|██▎       | 79/338 [00:00<00:02, 108.75it/s]Loading weights:  30%|███       | 102/338 [00:00<00:01, 134.01it/s]Loading weights:  34%|███▍      | 116/338 [00:00<00:01, 133.75it/s]Loading weights:  39%|███▉      | 131/338 [00:01<00:01, 124.58it/s]Loading weights:  43%|████▎     | 144/338 [00:01<00:01, 107.98it/s]Loading weights:  47%|████▋     | 158/338 [00:01<00:01, 104.11it/s]Loading weights:  50%|█████     | 169/338 [00:01<00:01, 103.30it/s]Loading weights:  64%|██████▍   | 217/338 [00:01<00:00, 186.52it/s]Loading weights:  70%|███████   | 237/338 [00:01<00:00, 163.39it/s]Loading weights:  75%|███████▌  | 255/338 [00:01<00:00, 137.06it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 171.62it/s]
+D:\workbuddy output\Datawhale\agentic-rl-lab\.venv-gpu\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+[model] Qwen/Qwen2.5-1.5B-Instruct | trainable 18.46M / total 1562.2M (1.18%) | device cuda:0 | dtype bfloat16
+[eval] base {'accuracy': 0.4, 'n': 20}
+[grpo_is] step 01 | reward -0.167 | acc 0.417 | len 168 | H 0.58 | loss +0.0003 | 65.53s
+[grpo_is] step 02 | reward -0.167 | acc 0.417 | len 144 | H 0.89 | loss -0.0019 | 44.29s
+[grpo_is] step 03 | reward -0.333 | acc 0.333 | len 168 | H 0.92 | loss +0.0008 | 50.38s
+[grpo_is] step 04 | reward +0.167 | acc 0.583 | len 164 | H 0.57 | loss -0.0013 | 47.56s
+[grpo_is] step 05 | reward -0.167 | acc 0.417 | len 139 | H 0.57 | loss -0.0006 | 44.19s
+[grpo_is] step 06 | reward -0.667 | acc 0.167 | len 158 | H 0.70 | loss +0.0003 | 46.16s
+[grpo_is] step 07 | reward -0.833 | acc 0.083 | len 198 | H 0.73 | loss +0.0007 | 51.48s
+[grpo_is] step 08 | reward -0.333 | acc 0.333 | len 136 | H 0.57 | loss -0.0022 | 44.63s
+[grpo_is] step 09 | reward +0.000 | acc 0.500 | len 156 | H 0.47 | loss +0.0010 | 48.65s
+[grpo_is] step 10 | reward -0.667 | acc 0.167 | len 184 | H 0.65 | loss +0.0005 | 50.87s
+[save] D:\workbuddy output\Datawhale\agentic-rl-lab-repro\logs\grpo_is.json
+[save] adapter -> D:\workbuddy output\Datawhale\agentic-rl-lab-repro\outputs\grpo_is-lora
